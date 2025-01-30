@@ -1,166 +1,138 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+/* *{
     padding: 0;
-    box-sizing: border-box;
-    line-height: 1.6;
-    color: #333;
+    box-sizing: 0;
+    margin: 0;
 }
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+ul li{
+    list-style-type: none;
+    padding: 18px;
 }
-
-header nav {
+ul{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    justify-content: space-evenly;
+    
+}
+nav{
+    background-color: aquamarine;
+    height: 60px;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
+.text{
+    background-image: url(./stars.jpg);
+    height: 100vh;
     display: flex;
-    gap: 1rem;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #f4a261;
-}
-
-/* Hero Section */
-.hero {
-    background: #f4a261;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.hero .btn {
-    background: #333;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.hero .btn:hover {
-    background: #fff;
-    color: #333;
-}
-
-/* About Section */
-.about {
-    background: #e9ecef;
-    padding: 2rem 1rem;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.text h1{
+       color: white;
+    font-size: 50px;
 }
-
-/* Services Section */
-.services {
-    padding: 2rem 1rem;
-    background: #fff;
+.text p{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
 }
-
-.services h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.service-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.card {
-    padding: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    transition: box-shadow 0.3s;
-}
-
-.card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Section */
-.contact {
-    padding: 2rem 1rem;
-    background: #e9ecef;
-    text-align: center;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact button {
-    background: #333;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
+button{
+    height: 50px;
+    width: 90px;
+    background-color: aquamarine;
+    font-size: 15px;
     border: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
 }
-
-.contact button:hover {
-    background: #f4a261;
+.main{
+    display: flex;
+    height: 80vh;
 }
-
-/* Footer */
-footer {
+.text1{
+    height: 80vh;
+    width: 50%;
+    
+}
+.img{
+    width: 50%;
+    overflow: hidden;
+}
+img{
+    height: 400px;
+    width: 600px;
+    padding: 20px;
+    margin: 40px;
+}
+.text1 p{
+    font-size: 30px;
     text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: #fff;
+   
 }
+@media only screen and (max-width: 768px){
+    nav{
+        font-size: 10px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+       
+    }
+    .img{
+        width: 100%;
+    }
+    .img img{
+        margin-bottom: 550px;
+        height: 200px;
+        width: 280px;
+    }
+    .text1 {
+        width: 100%;
+       
+    }
+    .text1 p{
+        font-size: 17px;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 480px){
+     nav{
+         font-size: 10px;
+     }
+     .main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .img{
+        width: 100%;
+    }
+    .img img{
+        height: 150px;
+        width: 150px;
+    }
+    .text1 p{
+        font-size: 10px;
+        width: 100%;
+    }
+} */
+
+
+
+/* .main{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+.box{
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+.box2{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+} */
